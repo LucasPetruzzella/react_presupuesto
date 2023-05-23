@@ -55,6 +55,7 @@ const Gasto = ({ gasto,setGastoEditar, eliminarGasto  }) => {
           <p className="categoria"> {gasto.tipoGasto}</p>
           <p className="nombre-gasto">{gasto.nombre}</p>
           <p className="fecha-gasto">{parseFecha(new Date(gasto.fecha))}</p>
+          <small>{"<- Arrastre para Derecha o Izquierda para más acciones ->" }</small>
         </div>
       </div>
       <div className="cantidad-gasto">{formatearCantidad(gasto.cantidad)} </div>
